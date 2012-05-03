@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+ <style name="button"> 
+        <item name="android:colorForeground">#E22300</item> 
+        <item name="android:padding">2sp</item> 
+        <item name="android:textSize">15sp</item> 
+        <item name="android:color">#E22300</item> 
+        <item name="android:gravity">left</item> 
+		<item name="android:background">#E41B17</item>         
+        <item name="android:textStyle">bold</item> 
+    </style> 
+ <style name="IconDescriptionText"> 
+        <item name="android:colorForeground">#E22300</item> 
+        <item name="android:padding">2sp</item> 
+        <item name="android:textSize">15sp</item> 
+        <item name="android:color">#FFFFFF</item> 
+        <item name="android:gravity">left</item>  
+  		<item name="android:paddingLeft">6dip</item>
+  		<item name="android:paddingTop">16dip</item>
+    </style> 
+
+  </resources>

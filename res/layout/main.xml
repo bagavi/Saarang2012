@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/mainWidth"
+        android:layout_marginTop="@dimen/dip"
+        android:layout_marginBottom="@dimen/dip"	    
+	    >
+		<Button
+			        android:id="@+id/Hosipitality"
+					android:layout_width="@dimen/buttonWidth"
+			        android:layout_height="@dimen/buttonHeight"
+			        android:layout_marginTop="@dimen/dip"
+			        android:layout_marginLeft="@dimen/dip"
+			        style="@style/button"
+		/>
+		<RelativeLayout 
+		android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonHeight"
+		>
+		<Button
+			        android:id="@+id/Events"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+			        android:layout_marginTop="@dimen/dip"
+			        android:layout_marginLeft="@dimen/dip"
+			        style="@style/button"	 	
+			    />
+		<TextView 
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:textSize="30sp"
+				    android:text="Events "
+			        android:paddingRight="@dimen/dip"
+		/>	    
+		</RelativeLayout>
+
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/buttonHeight"
+        android:layout_marginBottom="@dimen/dip"	    
+	    >	    
+		<Button
+			        android:id="@+id/Sponsors"
+					android:layout_width="@dimen/buttonWidth"
+			        android:layout_height="@dimen/buttonHeight"
+			        android:layout_marginBottom="@dimen/dip"
+			        android:layout_marginLeft="@dimen/dip"
+			        style="@style/button"
+			    />	    
+			    
+		<Button
+			        android:id="@+id/Finance"
+					android:layout_width="@dimen/buttonWidth"
+			        android:layout_height="@dimen/buttonHeight"
+			        android:layout_marginBottom="@dimen/dip"
+			        android:layout_marginLeft="@dimen/dip"
+			        style="@style/button"
+			    />	    			    
+	
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/buttonHeight"
+        android:layout_marginBottom="@dimen/dip"	    
+	    >	    
+		<Button
+			        android:id="@+id/ProShow"
+					android:layout_width="@dimen/ProShowbuttonWidth"
+			        android:layout_height="@dimen/buttonHeight"
+			        android:layout_marginBottom="@dimen/dip"
+			        android:layout_marginLeft="@dimen/dip"
+			        style="@style/button"
+			    />	    
+			    
+	
+	</LinearLayout>	
+</LinearLayout>
