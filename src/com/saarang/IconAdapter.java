@@ -1,6 +1,19 @@
 package com.saarang;
 
+/*
+ * Read IconView before this
+ * It has ImageButton and TextView
+ * Has two construct 
+ * 		default constructor
+ * 		another accepts the event_id ( here it is category basically)
+ * 		Fills the listActivity with the main category of events 
+ * 
+ */
 import android.content.Context;
+
+import java.lang.Math;
+import android.content.Intent;
+import android.sax.StartElementListener;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,7 +45,7 @@ public class IconAdapter extends BaseAdapter{
     public View getView(int position, View convertView, ViewGroup parent) {
 		
 		IconView iconview = new IconView(c);
-		iconview.setIconImage(IconData.EventCategoryID[position]);
+		int randombutton = (int)(Math.random()*1000)%16 ;
 		iconview.setIconDescriptionText(IconData.EventCategoryText[position]);
 		iconview.setOnClickListener(new OnItemClickListener(position)); 
 		return iconview ;
@@ -41,7 +54,7 @@ public class IconAdapter extends BaseAdapter{
 	
 	@Override
 	public int getCount() {
-    	return IconData.EventCategoryID.length;
+    	return IconData.EventCategoryText.length;
 	}
 	@Override
 	public Object getItem(int arg0) {
@@ -65,6 +78,10 @@ public class IconAdapter extends BaseAdapter{
 		@Override
 		public void onClick(View arg0) {
 			Log.e("click problems",""+mposition);
+			Intent intent = new Intent(c , EventActivity.class);
+			intent.putExtra("EventId", mposition);
+			c.startActivity(intent);
+
 		}
 		
 	}

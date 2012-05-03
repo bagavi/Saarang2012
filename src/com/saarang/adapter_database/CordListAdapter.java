@@ -9,11 +9,14 @@ package com.saarang.adapter_database;
 
 import java.util.HashMap;
 
+
 import com.saarang.R;
 import com.saarang.gallery_manager;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.provider.UserDictionary.Words;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,14 +45,17 @@ public class CordListAdapter extends CursorAdapter {
 		TextView name = (TextView) view.findViewById(R.id.cordname);
 		TextView number = (TextView) view.findViewById(R.id.cordphone);
 		TextView eventName = (TextView) view.findViewById(R.id.cordEvent);
-		
+		//android:inputType="textCapSentences"
 		if(cursor!=null){
 			String namestr = cursor.getString(1);
 			name.setText(namestr);
 			String phonestr = cursor.getString(2);
 			number.setText(phonestr);
 			int eventId = cursor.getInt(3);
-			eventName.setText(gallery_manager.EventCategoryText[eventId]); // Sets the vent name of the coord
+			Log.e("Adapter" ,""+eventId);
+			Log.e("Adapter" ,gallery_manager.eventNameHash.get(eventId));
+			//name = g.eventNameHash.get(eventid);
+			eventName.setText(gallery_manager.eventNameHash.get(eventId)); // Sets the vent name of the coord
 		}	
 	}
 

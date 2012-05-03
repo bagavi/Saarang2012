@@ -1,5 +1,12 @@
 package com.saarang;
 
+/*
+ * Simple Activity....The name is very misleading sorry for that!
+ * Called when the event button is clicked on the main activity(saarang activity)
+ * Populates the List of category of events. Eg Dance, Workshop etc
+ * The list is selectable and will give the user list of events a particluar category
+ * Eg Under Quiz - Buzzer quiz, Daily Quiz etc 
+ */
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ListActivity;
@@ -13,7 +20,6 @@ import android.view.View;
 import android.widget.ListView;
 
 public class DepartmentActivity extends ListActivity {
-	String dispval;
 	private int eventId;
 
 	@Override
@@ -45,14 +51,5 @@ public class DepartmentActivity extends ListActivity {
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.menu, menu);
 		return true;
-	}
-
-	@Override
-	public Dialog onCreateDialog(int id) {
-
-		AlertDialog.Builder timeDialog = new AlertDialog.Builder(this);
-		timeDialog.setTitle("Madher");
-		timeDialog.setMessage(dispval);
-		return timeDialog.create();
 	}
 }

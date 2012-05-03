@@ -1,34 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android"
-	
->  
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:paddingBottom="@dimen/IconBotPadding"
-    >
-  <ImageButton 
- 	android:id="@+id/icon"
- 	android:layout_width="@dimen/IconWidth"
-  	android:layout_height="@dimen/IconHeigth"
-  	android:textStyle="bold"
-  	android:layout_weight="1"
-  	android:focusable="false"
-  	android:focusableInTouchMode="false"
-  	android:background="#E41B17"
-
-  >
-  </ImageButton>
-  
-  <TextView 
-  	android:id="@+id/iconDescription"
- 	android:layout_width="@dimen/IconDescriptionWidth"
-  	android:layout_height="@dimen/IconDescriptionHeight"
-  	android:textStyle="bold"
-  	android:layout_weight="2"
-  	android:focusable="false"
-  	android:focusableInTouchMode="false"
-    />
-  </LinearLayout>
-  </merge>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<TextView android:id="@+id/iconDescription"
+			android:layout_width="@dimen/IconDescriptionWidth"
+			android:layout_height="@dimen/IconDescriptionHeight"
+			android:textStyle="bold" android:textSize="25dip"
+			android:layout_weight="2" android:focusable="false" android:gravity="center"
+			android:focusableInTouchMode="false" android:textColor="#FFFFFF" />
+	</LinearLayout>
+</merge>
